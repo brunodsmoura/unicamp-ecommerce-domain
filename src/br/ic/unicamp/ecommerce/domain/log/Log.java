@@ -7,6 +7,8 @@ import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -28,7 +30,7 @@ public class Log implements Serializable {
 	public Log() {	}
 
 	@Id
-	@Column(name="id_log")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="log_sequence")
 	public Long getId() {
 		return id;
 	}
@@ -56,7 +58,7 @@ public class Log implements Serializable {
 		this.codigoUsuario = codigoUsuario;
 	}
 
-	@Column(name="nm_tabela", nullable=false, length=100)
+	@Column(name="tabela", nullable=false, length=100)
 	public String getTabela() {
 		return tabela;
 	}
@@ -65,7 +67,7 @@ public class Log implements Serializable {
 		this.tabela = tabela;
 	}
 
-	@Column(name="ds_conteudo", nullable=false, length=255)
+	@Column(name="conteudo", nullable=false, length=255)
 	public String getConteudo() {
 		return conteudo;
 	}

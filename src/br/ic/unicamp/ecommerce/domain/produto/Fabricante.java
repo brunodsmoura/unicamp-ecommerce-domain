@@ -24,7 +24,6 @@ public class Fabricante implements Serializable {
 	public Fabricante() { }
 
 	@Id
-	@Column(name="id_fabricante")
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="fabricante_sequence")
 	public Integer getId() {
 		return id;
@@ -34,7 +33,7 @@ public class Fabricante implements Serializable {
 		this.id = id;
 	}
 
-	@Column(name="nm_fabricante", nullable = false, length = 255)
+	@Column(name="nome", nullable = false, length = 255)
 	public String getNome() {
 		return nome;
 	}

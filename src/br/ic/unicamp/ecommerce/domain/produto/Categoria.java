@@ -32,7 +32,6 @@ public class Categoria implements Serializable {
 
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="categoria_sequence")
-    @Column(name = "id_categoria")
     public Integer getId(){
     	return this.id;
     }
