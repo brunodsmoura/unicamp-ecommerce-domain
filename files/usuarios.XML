@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios>
+  <usuario id="1">
+    <cpf>75510134828</cpf>
+    <nome>Asdrubal da Silva</nome>
+    <email>asdrubal@unicamp.br</email>
+    <telefone>19987654321</telefone>
+    <idade>30</idade>
+    <sexo>m</sexo>
+    <login>asdrubal</login>
+    <senha>908asoid09a8scklhzxc348a</senha>
+  </usuario>
+  <usuario id="2">
+    <cpf>47535497713</cpf>
+    <nome>Quincas Borba</nome>
+    <email>quincas.borba@unicamp.br</email>
+    <telefone>11995641578</telefone>
+    <idade>25</idade>
+    <sexo>m</sexo>
+    <login>quincas</login>
+    <senha>78sdkjnzx98791</senha>
+  </usuario>
+  <usuario id="3">
+    <cpf>71455465232</cpf>
+    <nome>Doriana Margarina</nome>
+    <email>doriana.margarina@unicamp.br</email>
+    <telefone>19945783162</telefone>
+    <idade>22</idade>
+    <sexo>f</sexo>
+    <login>doriana</login>
+    <senha>11is90c0zkkansq987</senha>
+  </usuario>
+</usuarios>
